@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <!--Note: CSS Source Code-->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!--Note: Bootstrap Source Code-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="body">
+    <header class="header">
+        <h1>Weather Dashboard</h1>
+    </header>
+
+  <div>
+    <!--Note: City weather search section (search navigation & pre-made city buttons)-->
+    <section class="searchContainer">
+        <h2 class="cityHeader">Search for a City:</h2>
+
+        <!--Note: City Weather Search Bar-->
+        <nav class="navbar bg-body-tertiary" id="searchArea">
+            <div class="container-fluid">
+              <form class="d-flex" role="search" id="searchBar">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" id="searchBtn" type="submit">Search</button>
+              </form>
+            </div>
+        </nav><br>
+
+        <!--Note: Buttons for History Cities-->
+        <!--FixME: I need to go back through the city history (cityBtn) and have them display weather information when clicked-->
+        <div id='cityBtn'></div>
+        <!--<button type="button" class="btn btn-outline-secondary" id="cityBtn">New York City</button><br>-->
+      </section>
+
+    <!--Today's Weather-->
+    <section class="weatherContainer" id="todayWthr">
+        <div class="card" id="weather-info">
+            <div class="card-body">
+              <h5 class="card-title">City</h5>
+              <h5>Date</h5>
+              <p class="card-text">
+                <ul>
+                  <li>Temperature:</li>
+                  <li>Wind:</li>
+                  <li>Humidity:</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+      </section>
+
+
+    <!--5 day weather-->
+    <section class="weatherContainer" id="fiveDay">
+        <!--FixMe: I need to go back and match the class and id with the fiveDay JavaScript code to display the info I want and have it appear as though its on a card like the one that I commented out-->
+        <!--<div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+              <p class="card-text" id="fiveText">
+                <ul>
+                  <li>Temperature:</li>
+                  <li>Wind:</li>
+                  <li>Humidity:</li>
+                </ul>
+              </p>
+            </div>
+        </div> -->
+
+
+<!--Note: JavaScript & jQuery Source Code-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+<script src="./assets/js/sript.js"></script>
+</body>
+</html>
