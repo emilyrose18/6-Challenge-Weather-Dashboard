@@ -1,0 +1,98 @@
+/* Note:Border for the entire body of webpage */
+.body{
+    border: 3px solid black;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* Note: Header Design for top of webpage*/
+.header {
+    background: linear-gradient(to right, #1b15df, #100a58);
+    font-family:monospace;
+    font-size:large;
+    color: white;
+    text-align: right;
+    padding: 10px 300px;
+    margin: 5px;
+}
+
+/* Note:General layout for the three sections*/
+/* Code to have the sections sit side by side */
+.searchContainer, .weatherContainer {
+    float: left;
+    box-sizing: border-box;
+}
+
+/* Width for the Search Section sits on the left*/
+.searchContainer {
+    width: 25%;
+}
+
+/* Width for the weather section sits on the right*/
+.weatherContainer {
+    width: 75%;
+}
+
+/* Note: Section for the search bar & pre-made city buttons*/
+/* Search for a city design code */
+.cityHeader {
+    font-family: monospace;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/* Search Bar for City Weather */
+#searchBar {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Search Button */
+#searchBtn {
+    font-family: monospace;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(15, 15, 243);
+    margin-top: 10px;
+}
+
+/* Line under search button */
+/* ToDo: need to have line same width as the search bar */
+#searchArea {
+    border-bottom: 5px solid gray;
+}
+
+/*Pre-made City Buttons*/
+
+#cityBtn {
+    font-family: monospace;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 350px;
+}
+
+/* Note:Today's Weather & 5 day outlook sections */
+/* Today weather styling code */
+#todayWthr {
+    font-family: monospace;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Code to have 5 day "cards" sit next to each other in a row */
+#fiveDay {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); 
+    grid-gap: 10px;
+}
+
+#fiveText {
+    text-align: left;
+}
